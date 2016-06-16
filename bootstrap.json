@@ -1,0 +1,31 @@
+{
+    "java": {
+        "install_flavor": "windows",
+        "java_home": "c:/jdk1.8",
+        "jdk_version": "8",
+        "windows": {
+            "url": "http://my-mirror.example.com/jdk-8u91-windows-x64.exe",
+            "package_name": "Java SE Development Kit 8 Update 91 (64-bit)",
+            "checksum": "the_sha256_checksum"
+        },
+        "oracle": {
+            "accept_oracle_download_terms": true
+        }
+    },
+    "jenkins": {
+        "windows": {
+            "base": "c:/chef_jenkins_provisioner",
+            "slave_home": "c:/jenkins",
+            "set_acl_binary_url": "http://my-mirror.example.com/SetACL.exe",
+            "set_acl_binary_url_checksum": "the_sha256_checksum",
+            "jce_export_policy_jar": "http://my-mirror.example.com/US_export_policy.jar",
+            "jce_export_policy_checksum": "the_sha256_checksum",
+            "jce_local_policy_jar": "http://my-mirror.example.com/local_policy.jar",
+            "jce_local_policy_checksum": "the_sha256_checksum"
+        }
+    },
+    "run_list": [
+        "recipe[chef_jenkins_provisioner]"
+    ]
+}
+

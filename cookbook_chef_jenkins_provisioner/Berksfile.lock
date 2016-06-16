@@ -1,0 +1,17 @@
+DEPENDENCIES
+  chef_jenkins_provisioner
+    path: .
+    metadata: true
+
+GRAPH
+  apt (4.0.0)
+    compat_resource (>= 0.0.0)
+  chef_handler (1.4.0)
+  chef_jenkins_provisioner (1.0.0)
+    java (>= 0.0.0)
+    windows (>= 0.0.0)
+  compat_resource (12.10.6)
+  java (1.39.0)
+    apt (>= 0.0.0)
+  windows (1.43.0)
+    chef_handler (>= 0.0.0)
