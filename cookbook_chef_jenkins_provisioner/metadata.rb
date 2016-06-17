@@ -8,3 +8,4 @@ version          '1.0.0'
 
 depends 'windows'
 depends 'java'
+depends 'git'
